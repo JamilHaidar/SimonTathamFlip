@@ -1,5 +1,5 @@
 # SimonTathamFlip
-Implementation of the Flip game from Simon Tatham's Puzzles with an optimal linear algebra-based solution in Python. A standalone executable can be downloaded and run to try out the game [(link)](https://github.com/JamilHaidar/SimonTathamCube/raw/main/cube.exe).
+Implementation of the Flip game from Simon Tatham's Puzzles with an optimal linear algebra-based solution in Python. A standalone executable can be downloaded and run to try out the game [(link)](https://github.com/JamilHaidar/SimonTathamFlip/raw/main/flip.exe).
 
 The way I solved this game is based on doing linear algebra on matrices where singular elements are from the Galois field GF(2). This means that we can only have the elements 0 and 1, with all operations defined on these elements. For example, addition is a XOR operation and multiplication is an AND operation.
 
@@ -45,10 +45,6 @@ Let A be the transition matrix that transforms possible moves to the board's sta
 We know that $Am = b$. Therefore, the solution is given by $m = A^{-1}b$. The way I approached this is by creating a matrix $M = [A|b]$ and performing Gaussian Elimination on this matrix. The final column once Gaussian Elimination is finished represents the solution $m$.
 
 ### Implementation
-An example solution may look like this one:
-
-<img src="https://raw.githubusercontent.com/michal-stachurski/rolling-cube/main/example/solution.gif" width="250" height="250">
-
 My approach for the optimal solution looks like:
 
-<img src="https://user-images.githubusercontent.com/60647115/210168448-c440d7ea-a00f-4313-b7dd-317cb10fdd0f.gif" width="300" height="300">
+<img src="https://user-images.githubusercontent.com/60647115/212553902-a31dbc53-c6a0-4b68-8588-afee5444fe1b.gif" width="300" height="300">
