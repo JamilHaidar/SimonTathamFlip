@@ -3,7 +3,7 @@ import pygame
 from solve_barebones import GameController
 
 WIDTH, HEIGHT = 600, 600
-pygame.display.set_caption("Cube Solver")
+pygame.display.set_caption("Flip Solver")
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 
 n = 5
